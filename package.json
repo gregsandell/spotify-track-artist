@@ -1,0 +1,41 @@
+{
+  "name": "spotify-track-artist",
+  "version": "1.0.0",
+  "description": "Creates a database of Spotify tracks and artists.  Creates a set of REST services for adding tracks and querying the database populated from the Spotify API.",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "server": "npx env-cmd node src/server.js",
+    "migrate": "pushd db; npx env-cmd -f ../.env npx sequelize-cli db:migrate; popd",
+    "migrate:undo": "pushd db; npx env-cmd -f ../.env npx sequelize-cli db:migrate:undo; popd",
+    "seed": "pushd db; npx env-cmd -f ../.env npx sequelize-cli db:seed; popd",
+    "seed:undo": "pushd db; npx env-cmd -f ../.env npx sequelize-cli db:seed:undo; popd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/18thStreet-code-challenges/spotify-hidden.git"
+  },
+  "author": "Greg Sandell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/18thStreet-code-challenges/spotify-hidden/issues"
+  },
+  "homepage": "https://github.com/18thStreet-code-challenges/spotify-hidden#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.5",
+    "sequelize": "^6.6.5",
+    "sqlite3": "^5.0.2",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "eslint": "^7.1.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "sequelize-cli": "^6.2.0"
+  }
+}

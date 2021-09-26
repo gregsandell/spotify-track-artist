@@ -1,0 +1,4 @@
+{
+  "dialect": "sqlite",
+  "storage": "/Users/gregsandell/Documents/git/Projects/spotify-track-artist/db/Spotify.db"
+}
