@@ -9,8 +9,8 @@
   "scripts": {
     "server": "npx env-cmd node src/server.js",
     "migrate": "pushd db; npx env-cmd -f ../.env npx sequelize-cli db:migrate; popd",
-    "migrate:undo": "pushd db; npx env-cmd -f ../.env npx sequelize-cli db:migrate:undo; popd",
-    "seed": "pushd db; npx env-cmd -f ../.env npx sequelize-cli db:seed; popd",
+    "migrate:undo": "pushd db; npx env-cmd -f ../.env npx sequelize-cli db:migrate:undo; npx env-cmd -f ../.env npx sequelize-cli db:migrate:undo; popd",
+    "seed": "pushd db; npx env-cmd -f ../.env npx sequelize-cli db:seed:all; popd",
     "seed:undo": "pushd db; npx env-cmd -f ../.env npx sequelize-cli db:seed:undo; popd"
   },
   "repository": {

@@ -2,6 +2,10 @@
 
 Creates a database of Spotify tracks and artists.  Creates a set of REST services for adding tracks and querying the database populated from the Spotify API.
 
+Code repository: [https://github.com/gregsandell/spotify-track-artist](https://github.com/gregsandell/spotify-track-artist)
+Accompanying video: [https://github.com/gregsandell/spotify-track-artist](https://github.com/gregsandell/spotify-track-artist)
+Challenge instructions:  see the `doc` directory
+
 ## INSTALL
 
 1. `sqlite3` should be installed somewhere on your system.  For Mac users:  if it's not already present at 

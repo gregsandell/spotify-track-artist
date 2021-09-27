@@ -1,4 +1,5 @@
-/* eslint-disable node/no-deprecated-api */
+/* eslint-disable max-len */
+/* eslint-disable no-unused-vars */
 const express = require('express');
 const bodyParser = require('body-parser');
 const url = require('url');

@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* eslint-disable max-len */
 const fetch = require('node-fetch');
 const querystring = require('querystring');
 
