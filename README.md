@@ -44,7 +44,7 @@ To remove the seed data (this will remove all track and artist data): `npm run s
 | Key      | Value |
 | ----------- | ----------- |
 | STORAGE      | Absolute path to a sqlite3 database file       |
-| SPOTIFY_AUTH   | Basic \<base64 string\><br/> The base64 string should adhere to the requirmebts from the *Authorization Code Flow* section of the [Spotify Authorization Guide](https://developer.spotify.com/documentation/general/guides/authorization-guide/), namely: `client_id:client_secret`|
+| SPOTIFY_AUTH   | Basic \<base64 string\><br/> The base64 string should adhere to the requirements from the *Authorization Code Flow* section of the [Spotify Authorization Guide](https://developer.spotify.com/documentation/general/guides/authorization-guide/), namely: `client_id:client_secret`|
 | SPOTIFY_BASE_AUTH_URL | `https://accounts.spotify.com/` |
 | SPOTIFY_BASE_URL | `https://api.spotify.com/` |
 | SPOTIFY_TOKEN_ENDPOINT | `api/token` |
